@@ -13,7 +13,7 @@ app.use(express.json());
 app.get('/', (request, response) => {
     response.send('Works')
 })
-app.use('/recipe', recipeRoutes);
+app.use('/cooking', recipeRoutes);
 
 app.listen(process.env.PORT, () => {
     console.log(`library-express: Express application is listening on port ${process.env.PORT}...`);
